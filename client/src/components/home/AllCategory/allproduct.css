@@ -1,0 +1,206 @@
+.all-product-section {
+  display: grid;
+  grid-template-columns: 0.5fr 2.5fr;
+  width: 100%;
+  padding: 10px 15px;
+  gap: 0.5rem;
+}
+.all-product-left {
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: -2px -2px 5px rgb(129, 128, 128), 2px 2px 5px rgb(67, 66, 66);
+  height: fit-content;
+}
+.underlineBigScreen {
+  width: 100%;
+  height: 3px;
+  background: crimson;
+}
+
+.all-product-right {
+  background: rgb(255, 255, 255);
+  height: 740px;
+  padding: 15px;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+.allproduct-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+.allproducts {
+  border: 2px solid rgb(128, 126, 126);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black, -2px -2px 5px white;
+}
+.img-ab-discount {
+  position: relative;
+  z-index: 1;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.allproduct_img {
+  width: 100%;
+  height: 200px;
+  padding: 1px 1px 5px 1px;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* skeleton div style */
+.skeleton-ab-img {
+  padding: 0 5px 5px 5px;
+}
+.buttons-skeleton{
+    padding: 17px !important;
+}
+.button-all-product-flex-skeleton{
+display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+/* end of skeleton div styles */
+.img-ab-discount > div {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: white;
+  width: 80px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.p-di {
+  font-size: 12px;
+}
+.all-product-text {
+  text-align: start;
+  padding: 10px;
+}
+.main-price-span {
+  text-decoration: line-through;
+  color: red;
+}
+.button-all-product-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.button-all-product-flex> *{
+  background: crimson;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 1px;
+  font-size: 18px;
+  font-family: var(--font-Quintessential);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.button-all-product-flex>button:hover{
+    box-shadow: -2px -2px 5px rgb(227, 103, 128), 2px 2px 5px rgb(61, 55, 55);
+}
+.navlink-all-product-btn>button{
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: white;
+    font-family: var(--font-Quintessential);
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+.navlink-all-product-btn:hover{
+    box-shadow: -2px -2px 5px rgb(227, 103, 128), 2px 2px 5px rgb(61, 55, 55);
+}
+/* material ui style */
+.subheader-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5px 10px 5px;
+  /* flex-wrap: wrap; */
+}
+/* below class from mui */
+.css-1xi1ijy-MuiListSubheader-root{
+   line-height: 25px !important; 
+}
+.pos-ma {
+  position: relative;
+}
+.zindex-menuitem {
+  position: absolute;
+  z-index: 10 !important;
+}
+.text-material-category {
+  text-transform: capitalize;
+  font-family: var(--font-McLaren) !important;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  .allproduct-flex {
+    grid-template-columns: 1fr 1fr;
+  }
+  .css-1xi1ijy-MuiListSubheader-root{
+    font-size: 13px !important;
+ }
+}
+@media screen and (max-width: 767px) {
+  .all-product-section {
+    grid-template-columns: auto;
+    width: 100%;
+    padding: 10px 15px;
+  }
+  .all-product-right {
+    width: 100%;
+  }
+  .hideOnSmallScreen {
+    display: none;
+  }
+  .underlineBigScreen {
+    display: none;
+  }
+  .css-1xi1ijy-MuiListSubheader-root{
+    font-size: 15px !important;
+ }
+}
+@media screen and (max-width: 550px) {
+  .allproduct-flex {
+    grid-template-columns: auto;
+  }
+  .all-product-right {
+    background: rgb(255, 255, 255);
+    height: fit-content;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hideOnBigScreen {
+    display: none;
+  }
+  .zindex-menuitem {
+    display: none;
+  }
+  .all-product-left {
+    width: 100%;
+    max-width: 200px;
+  }
+  .all-product-right {
+    width: 100%;
+    max-width: 1240px;
+  }
+}

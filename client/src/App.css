@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=McLaren&family=Quintessential&display=swap");
+*{
+  margin: 0%;
+  box-sizing: border-box;
+}
+:root {
+  --font-Quintessential: "Quintessential";
+  --font-McLaren: "McLaren";
+  --smooth-transition: all 0.3s ease;
+  --long-transition: all 0.4s ease;
+  --color-gold: goldenrod;
+}
+/* here I changed recently, body{before width not fixed, after change give max-width: 1440px }  */
+body{
+  font-family: var(--font-McLaren);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+html, body {
+  height: 100%;
+}
+.circle{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle>h2{
+  padding: 10px;
+}

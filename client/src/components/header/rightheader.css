@@ -1,0 +1,67 @@
+.rightheader{
+    width: 250px;
+    height: auto;
+}
+
+.rightheader .right_nav{
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    padding: 10px 0;
+}
+
+.rightheader .right_nav h4{
+    margin-left: 10px;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 500;
+    color: #fff;
+}
+
+.rightheader .avtar{
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.rightheader .avtar2{
+    cursor: pointer;
+    background-color: #1365cf;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.nav_btn{
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;
+    margin-top: 20px;
+    padding-right: 25px;
+}
+
+.nav_btn a{
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #131921;
+}
+
+.nav_btn .flag{
+    display: flex;
+    align-items: center;
+}
+.logout-btn{
+    width: 100%;
+    font-size: 20px;
+    font-family: var(--font-McLaren);
+    border: 2px solid rgb(72, 72, 71);
+    box-shadow: 1px 0 5px 5px gray;
+    border-radius: 5px;
+    background: transparent;
+    color: rgb(72, 72, 71);
+    text-shadow: 2px 2px 5px rgb(134, 129, 129);
+    padding: 2px 5px;
+    letter-spacing: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

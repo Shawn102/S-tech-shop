@@ -1,0 +1,291 @@
+.purchase-container {
+  margin-top: 35px;
+  border-top: 2px solid red;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 50px;
+  /* background: rgb(167, 164, 164); */
+}
+.profile-section {
+  background: linear-gradient(to left, rgb(68, 184, 230), rgb(42, 42, 235));
+  height: 250px;
+  padding: 0 90px;
+  margin-top: 30px;
+}
+.profile-section > h2 {
+  text-align: center;
+  color: white;
+  padding: 20px 5px;
+}
+
+.box-container-model {
+  height: 200px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  margin-top: 40px;
+  border-radius: 10px;
+  /* border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, red, rgba(232, 185, 0, 0)) 1 100%; */
+  box-shadow: -3px -3px 5px rgb(255, 255, 255), 3px 3px 5px rgb(0, 0, 0);
+  position: relative;
+}
+.avtar-personalinfo {
+  background: linear-gradient(to top, gold, red);
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px !important;
+  width: 55px !important;
+  height: 55px !important;
+  font-family: var(--font-Quintessential) !important;
+  box-shadow: -1px -1px 5px rgb(0, 0, 0), 1px 1px 5px rgb(255, 255, 255);
+}
+.h4-avatar {
+  text-align: center;
+  margin-top: -5px;
+  letter-spacing: 0.1rem;
+  color: white;
+}
+.last-name {
+  color: gold;
+}
+.personal-info-email-phone {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* line-height: 0%; */
+  color: white;
+  font-family: var(--font-Quintessential);
+  font-size: 20px;
+  text-align: center;
+}
+
+.purchase-flex-all {
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.purchase-flex-all img {
+  width: 80px;
+  border-radius: 5px;
+  box-shadow: -1px -1px 5px rgb(0, 0, 0), 1px 1px 5px rgb(255, 255, 255);
+}
+/* purchase box */
+.purchase-box {
+  margin-top: 120px;
+  padding: 0 90px;
+  position: relative;
+}
+.table-history-show {
+  overflow-x: auto;
+  box-shadow: -1px -1px 5px rgb(0, 0, 0), 1px 1px 5px rgb(255, 255, 255);
+  border-radius: 5px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  color: rgb(0, 0, 0);
+}
+.its-head-table {
+  background: linear-gradient(to left, rgb(91, 91, 250), rgb(203, 173, 2));
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 6px;
+}
+.shipping-details-td {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+.shipping-details-td:hover {
+  color: blue;
+}
+.delete-history {
+  position: relative;
+  animation: deleteHistory 2s infinite;
+}
+@keyframes deleteHistory {
+  50% {
+    transform: scale(1.3);
+    color: green;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.popupShipping {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+.show-popUp-shipping {
+  transform: scale(1);
+  opacity: 1;
+}
+.shippingpopupboxdetails {
+  width: 100%;
+  max-width: 350px;
+  height: fit-content;
+  padding: 20px 5px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  text-align: center;
+}
+.shippingpopupboxdetails > button {
+  cursor: pointer;
+  background: transparent;
+  border-color: rgb(0, 0, 0);
+  padding: 3px 25px;
+  font-size: 20px;
+  border-radius: 5px;
+  text-shadow: 2px 2px 5px black;
+  font-family: var(--font-Quintessential);
+  letter-spacing: 0.2rem;
+  box-shadow: -2px -2px 5px gray, 2px 2px 5px rgb(50, 50, 50);
+}
+/* popupProductDetails */
+.popupProductDetails {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(123, 255, 0, 0.5);
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  opacity: 0;
+  z-index: 100000;
+  overflow-y: scroll;
+  transition: all 0.2s ease;
+}
+.show-popupProductDetails {
+  transform: scale(1);
+  opacity: 1;
+}
+.productPopup-box {
+  width: 100%;
+  max-width: 1150px;
+  height: fit-content;
+  padding: 20px 5px;
+  background: rgba(0, 128, 255, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 3px 3px 5px black, -3px -3px 5px white;
+  position: relative;
+}
+.closeProductpopup-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px black, -2px -2px 3px rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.closeProductpopup-btn:hover {
+  transform: rotate(180deg);
+}
+/* loading skeleton history */
+.skeleton-loading-history{
+    margin-top: 100px;
+}
+.personal-skeleton-loading{
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.skeleton-padd{
+   padding-top: 40px;
+}
+.h4-per-last{
+    padding-top: 10px;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+.h2-per-last{
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto; 
+}
+.personal-info-email-phone-skeleton{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 700px;
+    margin: 10px auto 0 auto;
+    padding: 10px 20px;
+}
+.margin-personal-email-phone{
+    margin: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .profile-section {
+    padding: 0 25px;
+  }
+  .purchase-box {
+    padding: 0 25px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .purchase-flex-all {
+    flex-direction: column;
+    line-height: 0%;
+  }
+  .profile-section {
+    padding: 0 25px;
+  }
+  .box-container-model {
+    height: 230px;
+  }
+  .purchase-flex-all span {
+    display: none;
+  }
+  .purchase-box {
+    padding: 0 25px;
+  }
+  .personal-info-email-phone-skeleton{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 30px;
+}
+}
